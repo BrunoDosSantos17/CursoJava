@@ -1,5 +1,6 @@
 import exception.ParametrosInvalidosException;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Contador {
