@@ -45,7 +45,7 @@ public class Program {
                 StringBuilder processedLine = new StringBuilder();
 
                 String produto = cells[0];
-                String valorTotal = String.format("%.2f", (Float.parseFloat(cells[1]) * Float.parseFloat(cells[2])));
+                String valorTotal = String.format("%.2f", (Float.parseFloat(cells[1]) * Float.parseFloat(cells[2]))).replace(',', '.');
                 processedLine.append(produto);
                 processedLine.append(", " + valorTotal);
                 outBr.write(processedLine.toString());
